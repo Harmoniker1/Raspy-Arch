@@ -25,6 +25,3 @@ def start(port = -1) -> Minecraft:
 def test():
     mc = start(0)
     mc.postToChat("Welcome to Howard-C's individual arch project, using raspy control.")
-
-test()
-
