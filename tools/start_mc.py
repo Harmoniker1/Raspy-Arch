@@ -1,3 +1,6 @@
+import sys
+sys.path.append("..")
+
 from mcpi.minecraft import Minecraft
 
 def start(port = -1) -> Minecraft:
