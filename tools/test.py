@@ -1,9 +1,9 @@
 import sys
 sys.path.append("..")
 
-from get_name import input_name
-from get_range import input_range
-from start_mc import start
+from tools.get_name import input_name
+from tools.get_range import input_range
+from tools.start_mc import start
 
 mc = start(0)
 

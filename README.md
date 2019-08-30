@@ -2,8 +2,16 @@
 
 An individual arch project using [Raspy control](https://github.com/ArkciaDragone/Raspy).
 
-Important info: all inputs in this project, unlike main Raspy project, should be done in the python command line, instead of the game chat.
+## Developing Environment
 
-#### Developing Environment
+Python 3.7.3 (64-bit)
 
-Python 3.7 (64-bit)
+## Important Note
+
+1. The programs are designed to run in Visual Studio Code. Direct double-click in the files' explorer is executable, but may cause unknown trouble.
+
+2. All inputs in this project, unlike the music project in Raspy, should be done in the python command line, instead of the game chat.
+
+## Developer
+
+[Howard C.](https://github.com/Howard-C)

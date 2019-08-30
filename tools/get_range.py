@@ -33,9 +33,8 @@ def input_range(game_name, id, info: str):
     """The workflow of inputing a list of number"""
 
     game_name.postToChat("")
-    game_name.postToChat(info)
+    game_name.postToChat(info + " (in the command line)")
     game_name.postToChat("If you want to know how to input, input 1 instead.")
-    game_name.postToChat("")
 
     print("\n" + info)
     print("If you want to know how to input, input 1 instead.\n")

@@ -17,7 +17,6 @@ def input_name(game_name):
 
     game_name.postToChat("")
     game_name.postToChat("Please input your name in the command line to initiate the program.")
-    game_name.postToChat("")
 
     print("\nPlease input your name to initiate the program.\n")
 
