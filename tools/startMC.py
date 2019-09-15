@@ -1,3 +1,9 @@
+# --------------------
+# startMC.py
+# 
+# Start a thread in MC
+# --------------------
+
 import sys
 sys.path.append("..")
 

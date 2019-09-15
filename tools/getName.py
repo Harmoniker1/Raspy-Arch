@@ -1,5 +1,6 @@
 # --------------------
-# get_range.py
+# getName.py
+# 
 # Get the user's name
 # --------------------
 
@@ -9,21 +10,21 @@ sys.path.append("..")
 import mcpi.connection
 
 # --------------------
-# input_name
+# inputName
 # --------------------
 
-def input_name(game_name):
+def inputName(gameName):
     """The workflow of inputing the user's name"""
 
-    game_name.postToChat("")
-    game_name.postToChat("Please input your name in the command line to initiate the program.")
+    gameName.postToChat("")
+    gameName.postToChat("Please input your name in the command line to initiate the program.")
 
     print("\nPlease input your name to initiate the program.\n")
 
     while True:
         name = input()
         try:
-            id = game_name.getPlayerEntityId(name)
+            id = gameName.getPlayerEntityId(name)
         except mcpi.connection.RequestError:
             print("\nWrong name, please input again:\n")
             continue

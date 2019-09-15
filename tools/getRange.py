@@ -1,5 +1,6 @@
 # --------------------
-# get_range.py
+# getRange.py
+# 
 # Get a list of six numbers indicating the range of the architecture the user want to attach
 # --------------------
 
@@ -7,14 +8,14 @@ import sys
 sys.path.append("..")
 
 # --------------------
-# help_range
+# helpRange
 # --------------------
 
-def help_range(game_name, id):
+def helpRange(gameName, id):
     """Help the user by giving instructions"""
 
     print("\nDon't know how to input? I'll help you out.")
-    game_name.entity.setRotation(id, 270)
+    gameName.entity.setRotation(id, 270)
     print("You're now facing the positive side on x-axis.\
  The positive side on z-axis is on your right, while the positive side on y-axis goes into the sky.")
     print("You will have to input the relative coordinate of the diagnoal corners of your architecture.")
@@ -26,43 +27,43 @@ def help_range(game_name, id):
     print("This instruction doesn't affect the workflow. Input your six numbers to continue!\n")
 
 # --------------------
-# input_range
+# inputRange
 # --------------------
 
-def input_range(game_name, id, info: str):
+def inputRange(gameName, id, info: str):
     """The workflow of inputing a list of number"""
 
-    game_name.postToChat("")
-    game_name.postToChat(info + " (in the command line)")
-    game_name.postToChat("If you want to know how to input, input 1 instead.")
+    gameName.postToChat("")
+    gameName.postToChat(info + " (in the command line)")
+    gameName.postToChat("If you want to know how to input, input 1 instead.")
 
     print("\n" + info)
     print("If you want to know how to input, input 1 instead.\n")
 
-    game_name.entity.setRotation(id, 270)
+    gameName.entity.setRotation(id, 270)
 
     while True:
-        num_list = [x for x in input().split()]
-        if len(num_list) == 1:
+        numList = [x for x in input().split()]
+        if len(numList) == 1:
             try:
-                num_list_int = int(num_list[0])
+                numListInt = int(numList[0])
             except ValueError:
                 print("\nYour input doesn't indicate six elements. Please input again.\n")
                 continue
             else:
-                if num_list_int == 1:
-                    help_range(game_name, id)
+                if numListInt == 1:
+                    helpRange(gameName, id)
                     continue
                 else:
                     print("\nYour input doesn't indicate six elements. Please input again.\n")
                     continue
-        if len(num_list) != 6:
+        if len(numList) != 6:
             print("\nYour input doesn't indicate six elements. Please input again.\n")
             continue
         try:
-            num_list_int = [int(x) for x in num_list]
+            numListInt = [int(x) for x in numList]
         except ValueError:
             print("\nYour input contains non-numerical elements. Please input again.\n")
             continue
         else:
-            return num_list_int
+            return numListInt

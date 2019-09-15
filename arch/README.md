@@ -4,4 +4,8 @@ Run any file in this folder to architect! Below are the brief introduction of th
 
 ## air.py
 
-Clear a user-defined area by placing air
+Clear a user-defined area by placing air.
+
+## pool.py
+
+Generate a swimming pool.
