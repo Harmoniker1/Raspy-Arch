@@ -67,3 +67,19 @@ def inputRange(gameName, id, info: str):
             continue
         else:
             return numListInt
+
+# --------------------
+# orderRange
+# --------------------
+
+def orderRange(range: list):
+    if len(range) != 6:
+        return []
+    else:
+        if range[0] >= range[3]:
+            range = [range[3], range[1], range[2], range[0], range[4], range[5]]
+        if range[1] >= range[4]:
+            range = [range[0], range[4], range[2], range[3], range[1], range[5]]
+        if range[2] >= range[5]:
+            range = [range[0], range[1], range[5], range[3], range[4], range[2]]
+        return range
