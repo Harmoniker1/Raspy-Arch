@@ -18,7 +18,7 @@ mc = start(0)
 id = inputName(mc)
 loc = mc.entity.getPos(id)
 
-setBlocksBesideLoc(mc, loc, [-999, 1, -999, 999, 1, 999], block.BEDROCK.id)
+setBlocksBesideLoc(mc, loc, [-99, - loc.y, -99, 99, - loc.y, 99], block.BEDROCK.id)
 print("\nSucceeded!")
 mc.postToChat("")
 mc.postToChat("Succeeded!")

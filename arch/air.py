@@ -24,15 +24,10 @@ while True:
     range = inputRange(mc, id, "Please input the range of the area you want to clear.")
     loc = mc.entity.getPos(id)
 
-    if (- range[1]) >= (loc.y) or (- range[4]) >= (loc.y):
-        continueOrBreak = preventVoid(range, loc, mc)
-        if continueOrBreak == 1:
-            continue
-        else:
-            break
-    
-    else:
-        setBlocksBesideLoc(mc, loc, range, block.AIR.id)
+    result = preventVoid(range, loc, mc)
+    if result == "continue":
+        continue
+    elif result == "break":
         break
 
 print("\nSuccess! Please wait until the work is finished.")
