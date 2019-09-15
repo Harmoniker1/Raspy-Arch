@@ -1,10 +1,20 @@
 # Raspy-Arch
 
-An individual arch project using [Raspy control](https://github.com/ArkciaDragone/Raspy).
+An individual arch project using [Raspy control](https://github.com/ArkciaDragone/Raspy). Use it to quickly generate useful structures or beautiful architectures in Minecraft!
 
 ## Developing Environment
 
 Python 3.7.3 (64-bit)
+
+Visual Studio Code 1.38.1
+
+## Running
+
+1. Startup a local Minecraft server and Minecraft 1.12.2.
+
+2. Enter multiplayer mode and select your server.
+
+3. Double-click on any of the files in the arch folder to start generating! A channel between the program and Minecraft will automatically be set up.
 
 ## Important Note
 
