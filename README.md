@@ -10,19 +10,19 @@ Visual Studio Code 1.38.1
 
 ## Running
 
-1. Startup a local Minecraft server and Minecraft 1.12.2.
+- Startup a local Minecraft server and Minecraft 1.12.2.
 
-2. Enter multiplayer mode and select your server.
+- Enter multiplayer mode and select your server.
 
-3. Double-click on any of the files in the arch folder to start generating! A channel between the program and Minecraft will automatically be set up.
+- Double-click on any of the files in the arch folder to start generating! A channel between the program and Minecraft will automatically be set up.
 
 ## Important Note
 
-1. The programs are designed to run in Visual Studio Code. Direct double-click in the files' explorer is executable, but may cause unknown trouble.
+- The programs are designed to run in Visual Studio Code. Direct double-click in the files' explorer is executable, but may cause unknown trouble (which, although, is _very_ unlikely).
 
-2. All inputs in this project, unlike the music project in Raspy, should be done in the python command line, instead of the game chat.
+- All inputs in this project, unlike the music project in Raspy, should be done in the python command line, instead of the game chat.
 
-3. Your location is grabbed as soon as you initialize the program (by inputing your name), so moving in-game after initializing should be avoided.
+- Your location is grabbed as soon as you initialize the program (by inputing your name), so moving in-game after initializing should be avoided.
 
 ## Developer
 
