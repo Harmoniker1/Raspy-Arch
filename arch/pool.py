@@ -16,7 +16,7 @@ from tools.startMC import start
 from tools.getName import inputName
 from tools.getRange import inputRange, orderRange
 from tools.touchVoid import poolVoid
-from tools.setBlockBesideLoc import setBlocksBesideLoc
+from tools.rsetBlock import rsetBlocks
 
 mc = start(0)
 
@@ -48,10 +48,10 @@ while True:
             ]
         
         for edge in edges:
-            setBlocksBesideLoc(mc, loc, edge, block.LIGHT_BLUE_GLAZED_TERRACOTTA.id)
+            rsetBlocks(mc, loc, edge, block.LIGHT_BLUE_GLAZED_TERRACOTTA.id)      # replace me, replace me!!
         
         waterRange = [range[0] + 1, range[1] + 1, range[2] + 1, range[3] - 1, range[4], range[5] - 1]
-        setBlocksBesideLoc(mc, loc, waterRange, block.WATER_STATIONARY.id)
+        rsetBlocks(mc, loc, waterRange, block.WATER_STATIONARY.id)
 
         break
 

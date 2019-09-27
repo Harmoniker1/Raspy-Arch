@@ -13,7 +13,7 @@ from tools.startMC import start
 from tools.getName import inputName
 from tools.getRange import inputRange
 from tools.touchVoid import airVoid
-from tools.setBlockBesideLoc import setBlocksBesideLoc
+from tools.rsetBlock import rsetBlocks
 
 mc = start(0)
 
@@ -28,7 +28,7 @@ while True:
     if result == "continue":
         continue
     elif result == "break":
-        setBlocksBesideLoc(mc, loc, range, block.AIR.id)
+        rsetBlocks(mc, loc, range, block.AIR.id)
         break
 
 print("\nSuccess! Please wait until the work is finished.")

@@ -11,14 +11,14 @@ import mcpi.block as block
 
 from tools.startMC import start
 from tools.getName import inputName
-from tools.setBlockBesideLoc import setBlocksBesideLoc
+from tools.rsetBlock import rsetBlocks
 
 mc = start(0)
 
 id = inputName(mc)
 loc = mc.entity.getPos(id)
 
-setBlocksBesideLoc(mc, loc, [-99, - loc.y, -99, 99, - loc.y, 99], block.BEDROCK.id)
+rsetBlocks(mc, loc, [-99, - loc.y, -99, 99, - loc.y, 99], block.BEDROCK.id)
 print("\nSucceeded!")
 mc.postToChat("")
 mc.postToChat("Succeeded!")
